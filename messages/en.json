@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "about": "About",
+    "programs": "Programs",
+    "gallery": "Gallery",
+    "sponsorship": "Sponsorship",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "join": "Join"
+  },
+  "hero": {
+    "headline": "Paddle with strength. Grow in community.",
+    "subheadline": "MulanPaddlers is an all-women dragon boat team in the Greater Toronto Area. We train together, compete together, and grow stronger—on and off the water.",
+    "cta": {
+      "primary": "Join the Team",
+      "secondary": "Contact Us"
+    }
+  },
+  "about": {
+    "title": "About MulanPaddlers",
+    "p1": "MulanPaddlers is an all-women dragon boat team based in the GTA.",
+    "p2": "We are committed to creating an inclusive and supportive environment where women of all backgrounds can discover the sport, build confidence, and form meaningful connections.",
+    "p3": "Our team brings together individuals with different levels of experience, united by a shared goal—to improve, compete, and grow together.",
+    "p4": "We value discipline, teamwork, and positive energy, while respecting different learning paces and personal goals."
+  },
+  "programs": {
+    "title": "Training & Programs",
+    "intro": "Our training focuses on technique, strength, endurance, and team coordination in a structured and supportive environment.",
+    "indoor": {
+      "title": "Indoor Training (Winter / Spring)",
+      "items": [
+        "Pool-based sessions and conditioning",
+        "Technique fundamentals and refinement",
+        "Strength and mobility development"
+      ]
+    },
+    "onwater": {
+      "title": "On-Water Season",
+      "items": [
+        "Technical paddling training",
+        "Boat timing and synchronization",
+        "Race preparation and performance"
+      ]
+    },
+    "trial": {
+      "title": "Trial & New Paddlers",
+      "items": [
+        "Beginner-friendly introduction",
+        "Learn basic techniques",
+        "Experience the team before committing"
+      ]
+    },
+    "outro": "We train with purpose and support each other at every stage."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "caption": "From training sessions to race days, every moment reflects commitment, teamwork, and growth."
+  },
+  "sponsorship": {
+    "title": "Partner With Us",
+    "p1": "MulanPaddlers is an all-women dragon boat team committed to athletic excellence and community impact.",
+    "p2": "We actively participate in competitions and community events, creating meaningful visibility opportunities for our partners.",
+    "offers": {
+      "title": "Sponsorship with MulanPaddlers offers:",
+      "items": [
+        "Brand exposure at regattas and events",
+        "Visibility across social media and team communications",
+        "Association with a growing and positive women's sports community"
+      ]
+    },
+    "p3": "We welcome partnerships that align with our values and support the continued growth of women in sport.",
+    "cta": "Become a Sponsor"
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "q": "Do I need prior dragon boat experience?",
+        "a": "No. We welcome beginners and support paddlers at all levels."
+      },
+      {
+        "q": "Is this team only for women?",
+        "a": "Yes. We are an all-women team focused on creating a supportive environment."
+      },
+      {
+        "q": "What should I bring to practice?",
+        "a": "Athletic wear and water. Additional details will be shared before sessions."
+      },
+      {
+        "q": "Is the team competitive?",
+        "a": "Yes. We train seriously, while maintaining a supportive and respectful team culture."
+      },
+      {
+        "q": "How can I join?",
+        "a": "Contact us via email or Instagram for current programs and trial sessions."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "intro": "Interested in joining or collaborating with us? We'd love to hear from you.",
+    "email": "mulanpaddlers@gmail.com",
+    "instagram": "@mulanpaddlers",
+    "wechat": "木兰桨手MULANMULAN"
+  },
+  "join": {
+    "title": "Join the Team",
+    "intro": "Whether you're a complete beginner or an experienced paddler, MulanPaddlers welcomes women of all backgrounds. Come try a session, meet the team, and find your place on the water.",
+    "tryout": {
+      "label": "Request a Tryout",
+      "desc": "Send us an email to book a trial session. No experience needed — just bring your energy and curiosity."
+    },
+    "register": {
+      "label": "Register to 2026 Program",
+      "desc": "Ready to commit? Fill out the registration form to join our 2026 season lineup."
+    },
+    "note": "Questions? Reach us at mulanpaddlers@gmail.com or via Instagram @mulanpaddlers."
+  },
+  "footer": {
+    "tagline": "MulanPaddlers — Women's Dragon Boat Team in the Greater Toronto Area"
+  }
+}
