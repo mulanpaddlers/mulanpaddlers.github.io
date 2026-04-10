@@ -31,7 +31,7 @@ export default function ActivePanel({ isOpen, onClose, children }: ActivePanelPr
         <button
           onClick={onClose}
           aria-label="Close panel"
-          className="absolute top-3 right-3 sm:top-4 sm:right-4 text-white/40 hover:text-pink-hot transition-colors text-lg leading-none min-w-[44px] min-h-[44px] flex items-center justify-center"
+          className="absolute top-3 right-3 sm:top-4 sm:right-4 w-10 h-10 flex items-center justify-center rounded-full border border-white/20 text-white/50 hover:text-pink-hot hover:border-pink-hot transition-colors text-base leading-none"
         >
           ✕
         </button>
