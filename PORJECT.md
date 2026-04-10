@@ -18,6 +18,22 @@ Recruit new members, present team identity, and provide a professional, credible
 * GTA community
 * Potential sponsors/partners
 
+## Design Reference
+Primary visual reference: HTML5 UP "Dimension"
+Reference: https://html5up.net/dimension
+
+## Desired Visual Direction
+- Single-page experience
+- Full-screen landing layout
+- Panel / modal-style content sections
+- Minimal navigation
+- Strong sense of depth
+- Clean, immersive, modern presentation
+- Responsive on desktop and mobile
+
+## Important Note
+This project should be inspired by the visual behavior and layout style of Dimension, but must NOT copy the original template code or rely on jQuery.
+
 ## Core Sections
 
 * Home (hero + quick nav)
@@ -86,7 +102,7 @@ Recruit new members, present team identity, and provide a professional, credible
 
 ## Assets
 
-* Logos: /assets/logos
+* Logos: /assets/images/logos
 * Images: /assets/images (hero, gallery, team)
 
 ## Tech Stack

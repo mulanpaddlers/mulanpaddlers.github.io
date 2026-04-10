@@ -65,3 +65,20 @@ Sources (for reference):
 IMPORTANT:
 * Use placeholder images only as temporary assets 
 * Structure code so images can be easily replaced later via /public/images
+
+## Design Reference Style
+The site should visually lean toward:
+- immersive one-page presentation
+- dark atmospheric background
+- centered hero composition
+- overlay / modal-like content panels
+- minimal but confident UI
+- subtle motion and depth, not flashy animation
+
+## Visual Interpretation
+Do not reproduce the reference exactly.
+Use it as inspiration, then adapt it to fit MulanPaddlers branding:
+- navy + hot pink palette
+- women’s sports identity
+- cleaner, more modern typography
+- better mobile usability

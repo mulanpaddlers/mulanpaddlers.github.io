@@ -1,32 +1,26 @@
 # Deployment (GitHub Pages)
 
 ## Target
-
-* GitHub Pages
-* Deploy from root
+- GitHub Pages
+- Publish from /docs on the selected branch
 
 ## Requirements
+- Static export only
+- No SSR or API routes
+- /docs is deployment output only
+- Source code must remain outside /docs
 
-* Static export only
-* No SSR or API routes
+## Build Output Flow
+1. Run `next build`
+2. Next.js generates static files in `/dist`
+3. Copy `/dist/*` into `/docs`
+4. GitHub Pages serves the site from `/docs`
 
 ## Next.js Config
-
-* output: 'export'
-* images.unoptimized = true
-
-## Build Steps
-
-1. npm run build
-2. output generated in /dist
-3. copy /dist contents to repo root (or /public if configured)
+- output: 'export'
+- images.unoptimized = true
 
 ## Rules
-
-* index.html must exist at root
-* All assets must use relative/static paths
-* Test locally before pushing
-
-## Domain
-
-* Custom domain via CNAME if needed
+- Do not place application source files in /docs
+- /docs must contain the generated static site only
+- index.html must exist inside /docs after build
