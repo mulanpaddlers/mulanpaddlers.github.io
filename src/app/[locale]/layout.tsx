@@ -22,13 +22,12 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   const messages = await getMessages();
 
+  // html/body are owned by app/layout.tsx.
+  // suppressHydrationWarning on the root html tag handles the lang attribute
+  // update from the default "en" to the actual locale without a hydration error.
   return (
-    <html lang={locale}>
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      {children}
+    </NextIntlClientProvider>
   );
 }
