@@ -6,6 +6,7 @@ import type { SectionId } from '@/components/shell/PanelShell';
 
 const NAV_SECTIONS: SectionId[] = [
   'about',
+  'team',
   'programs',
   'gallery',
   'sponsorship',

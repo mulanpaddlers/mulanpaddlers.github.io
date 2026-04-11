@@ -28,14 +28,14 @@ export default function ActivePanel({ isOpen, onClose, children }: ActivePanelPr
       }`}
     >
       <div className="relative w-full max-w-2xl">
-        <div className="max-h-[92vh] sm:max-h-[80vh] overflow-y-auto rounded bg-navy border border-white/10 shadow-2xl p-4 sm:p-8 pt-14 sm:pt-14">
-          <button
-            onClick={onClose}
-            aria-label="Close panel"
-            className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-navy border border-white/20 text-white/50 hover:text-pink-hot hover:border-pink-hot transition-colors text-base leading-none"
-          >
-            ✕
-          </button>
+        <button
+          onClick={onClose}
+          aria-label="Close panel"
+          className="absolute -top-5 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-navy border border-white/20 text-white/50 hover:text-pink-hot hover:border-pink-hot transition-colors text-base leading-none"
+        >
+          ✕
+        </button>
+        <div className="max-h-[92vh] sm:max-h-[80vh] overflow-y-auto rounded bg-navy border border-white/10 shadow-2xl p-4 sm:p-8 pt-6 sm:pt-8">
           {children}
         </div>
       </div>

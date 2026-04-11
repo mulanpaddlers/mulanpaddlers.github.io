@@ -55,6 +55,18 @@ export default function Gallery({ onLightboxChange }: GalleryProps) {
         ))}
       </div>
 
+      <p className="text-white/50 text-sm mt-5">
+        {t('follow')}{' '}
+        <a
+          href="https://instagram.com/mulanpaddlers"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-pink-hot hover:underline"
+        >
+          @mulanpaddlers
+        </a>
+      </p>
+
       {/* Lightbox */}
       {selected && (
         <div

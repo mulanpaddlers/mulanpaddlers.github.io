@@ -1,6 +1,7 @@
 {
   "nav": {
     "about": "About",
+    "team": "Team",
     "programs": "Programs",
     "gallery": "Gallery",
     "sponsorship": "Sponsorship",
@@ -54,7 +55,8 @@
   },
   "gallery": {
     "title": "Gallery",
-    "caption": "From training sessions to race days, every moment reflects commitment, teamwork, and growth."
+    "caption": "From training sessions to race days, every moment reflects commitment, teamwork, and growth.",
+    "follow": "View more exciting videos and photos — follow us on"
   },
   "sponsorship": {
     "title": "Partner With Us",
@@ -118,6 +120,19 @@
       "desc": "Ready to commit? Fill out the registration form to join our 2026 season lineup."
     },
     "note": "Questions? Reach us at mulanpaddlers@gmail.com or via Instagram @mulanpaddlers."
+  },
+  "team": {
+    "title": "Our Team",
+    "coach": {
+      "name": "Coach Steve Wilkes",
+      "role": "Head Coach",
+      "bio": "Steve Wilkes is a former Team Canada dragon boat team athlete and experienced coach who brings both high-performance knowledge and a genuine passion for dragon boating. He focuses on building strong fundamentals, explaining technique with clarity, and helping paddlers understand how to generate real power and efficiency. He also brings confident, precise steering to the boat."
+    },
+    "captain": {
+      "name": "Captain Jackie Yu",
+      "role": "Team Captain",
+      "bio": "Jackie Yu serves as Captain of MulanPaddlers, leading with a strong team-first mindset. She fell in love with dragon boating from her very first paddle and has since been driven to grow the sport, share her experience, and support women in athletics. She also competes with the PDBC competitive team, bringing a high-performance perspective and strong team culture to MulanPaddlers."
+    }
   },
   "footer": {
     "tagline": "MulanPaddlers — Women's Dragon Boat Team in the Greater Toronto Area"

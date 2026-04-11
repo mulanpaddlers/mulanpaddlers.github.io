@@ -10,11 +10,12 @@ import Sponsorship from '@/components/sections/Sponsorship';
 import FAQ from '@/components/sections/FAQ';
 import Contact from '@/components/sections/Contact';
 import JoinUs from '@/components/sections/JoinUs';
+import Team from '@/components/sections/Team';
 import ActivePanel from '@/components/shell/ActivePanel';
 import Header from '@/components/ui/Header';
 import Footer from '@/components/ui/Footer';
 
-export type SectionId = 'about' | 'programs' | 'gallery' | 'sponsorship' | 'faq' | 'contact' | 'join';
+export type SectionId = 'about' | 'team' | 'programs' | 'gallery' | 'sponsorship' | 'faq' | 'contact' | 'join';
 
 
 export default function PanelShell() {
@@ -33,6 +34,7 @@ export default function PanelShell() {
 
   const sectionMap: Record<SectionId, React.ReactNode> = {
     about: <About />,
+    team: <Team />,
     programs: <Programs />,
     gallery: <Gallery onLightboxChange={setLightboxOpen} />,
     sponsorship: <Sponsorship />,
