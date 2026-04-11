@@ -64,7 +64,7 @@ export default function Gallery({ onLightboxChange }: GalleryProps) {
           <button
             onClick={close}
             aria-label="Close image"
-            className="absolute top-6 right-6 w-10 h-10 flex items-center justify-center rounded-full border border-white/20 text-white/60 hover:text-pink-hot hover:border-pink-hot transition-colors text-base"
+            className="absolute top-6 right-6 z-10 w-10 h-10 flex items-center justify-center rounded-full border border-white/20 text-white/60 hover:text-pink-hot hover:border-pink-hot transition-colors text-base"
           >
             ✕
           </button>
