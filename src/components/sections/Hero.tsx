@@ -23,7 +23,7 @@ export default function Hero({ onPanelOpen }: HeroProps) {
   const tNav = useTranslations('nav');
 
   return (
-    <div className="text-center px-4 sm:px-6 pt-2 pb-6 sm:py-16 md:py-20 w-full max-w-lg mx-auto">
+    <div className="text-center px-4 sm:px-6 pt-2 pb-6 sm:py-16 md:py-20 w-full max-w-lg sm:max-w-3xl mx-auto">
       {/* Logo — responsive via wrapper + fill */}
       <div className="relative w-52 h-52 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 mx-auto mb-4 sm:mb-6">
         <Image
@@ -39,20 +39,22 @@ export default function Hero({ onPanelOpen }: HeroProps) {
         MulanPaddlers
       </h1>
       <p className="text-lg sm:text-lg md:text-xl text-white/80 mb-1">{t('headline')}</p>
-      <p className="text-base sm:text-base text-white/60 mb-6 sm:mb-12 max-w-xs sm:max-w-sm mx-auto leading-snug">
+      <p className="text-base sm:text-base text-white/60 mb-6 sm:mb-12 max-w-sm sm:max-w-lg mx-auto leading-snug">
         {t('subheadline')}
       </p>
 
-      <nav aria-label="Sections" className="flex flex-wrap md:flex-nowrap justify-center gap-x-4 sm:gap-x-5 gap-y-3 mb-6 sm:mb-12">
-        {NAV_SECTIONS.map((id) => (
-          <button
-            key={id}
-            onClick={() => onPanelOpen(id)}
-            className="text-white/80 hover:text-pink-hot text-sm uppercase tracking-widest transition-colors border-b border-transparent hover:border-pink-hot pb-0.5 min-h-[44px] flex items-center"
-          >
-            {tNav(id)}
-          </button>
-        ))}
+      <nav aria-label="Sections" className="mb-6 sm:mb-12">
+        <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 sm:gap-x-5 sm:gap-y-0 sm:flex-nowrap">
+          {NAV_SECTIONS.map((id) => (
+            <button
+              key={id}
+              onClick={() => onPanelOpen(id)}
+              className="text-white/80 hover:text-pink-hot text-xs sm:text-sm uppercase tracking-wide sm:tracking-widest transition-colors border-b border-transparent hover:border-pink-hot pb-0.5 min-h-[36px] sm:min-h-[44px] flex items-center whitespace-nowrap"
+            >
+              {tNav(id)}
+            </button>
+          ))}
+        </div>
       </nav>
 
       <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
