@@ -69,7 +69,7 @@ export default function Gallery({ onLightboxChange }: GalleryProps) {
             ✕
           </button>
           <div
-            className="relative w-full max-w-3xl max-h-[85vh] aspect-video"
+            className="relative w-full h-[90vh]"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
