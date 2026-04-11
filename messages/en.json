@@ -101,7 +101,10 @@
     "intro": "Interested in joining or collaborating with us? We'd love to hear from you.",
     "email": "mulanpaddlers@gmail.com",
     "instagram": "@mulanpaddlers",
-    "wechat": "木兰桨手MULANMULAN"
+    "wechatLabel": "WeChat",
+    "wechat": "MulanPaddlers 木兰桨手",
+    "rednoteLabel": "RedNote",
+    "rednote": "@mulanpaddlers"
   },
   "join": {
     "title": "Join the Team",

@@ -101,7 +101,10 @@
     "intro": "无论是加入队伍还是合作交流，欢迎随时联系我们。",
     "email": "mulanpaddlers@gmail.com",
     "instagram": "@mulanpaddlers",
-    "wechat": "木兰桨手MULANMULAN"
+    "wechatLabel": "微信",
+    "wechat": "MulanPaddlers 木兰桨手",
+    "rednoteLabel": "小红书",
+    "rednote": "@mulanpaddlers"
   },
   "join": {
     "title": "加入我们",

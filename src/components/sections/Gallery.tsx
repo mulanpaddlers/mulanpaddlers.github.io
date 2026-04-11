@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 const IMAGES = [
@@ -14,8 +15,22 @@ const IMAGES = [
   { src: '/assets/practice-shot-5.jpeg', alt: 'Team training' },
 ];
 
-export default function Gallery() {
+interface GalleryProps {
+  onLightboxChange?: (open: boolean) => void;
+}
+
+export default function Gallery({ onLightboxChange }: GalleryProps) {
   const t = useTranslations('gallery');
+  const [selected, setSelected] = useState<{ src: string; alt: string } | null>(null);
+
+  const open = (img: { src: string; alt: string }) => {
+    setSelected(img);
+    onLightboxChange?.(true);
+  };
+  const close = () => {
+    setSelected(null);
+    onLightboxChange?.(false);
+  };
 
   return (
     <section>
@@ -24,7 +39,11 @@ export default function Gallery() {
 
       <div className="grid grid-cols-2 gap-2 sm:gap-3">
         {IMAGES.map(({ src, alt }) => (
-          <div key={src} className="relative aspect-video rounded overflow-hidden bg-white/5">
+          <button
+            key={src}
+            onClick={() => open({ src, alt })}
+            className="relative aspect-video rounded overflow-hidden bg-white/5 focus:outline-none focus:ring-2 focus:ring-pink-hot"
+          >
             <Image
               src={src}
               alt={alt}
@@ -32,9 +51,37 @@ export default function Gallery() {
               className="object-cover transition-transform duration-500 hover:scale-105"
               sizes="(max-width: 640px) 45vw, 320px"
             />
-          </div>
+          </button>
         ))}
       </div>
+
+      {/* Lightbox */}
+      {selected && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-black/90 p-4"
+          onClick={close}
+        >
+          <button
+            onClick={close}
+            aria-label="Close image"
+            className="absolute top-6 right-6 w-10 h-10 flex items-center justify-center rounded-full border border-white/20 text-white/60 hover:text-pink-hot hover:border-pink-hot transition-colors text-base"
+          >
+            ✕
+          </button>
+          <div
+            className="relative w-full max-w-3xl max-h-[85vh] aspect-video"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={selected.src}
+              alt={selected.alt}
+              fill
+              className="object-contain"
+              sizes="100vw"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }

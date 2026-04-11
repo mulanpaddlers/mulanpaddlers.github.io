@@ -16,18 +16,10 @@ import Footer from '@/components/ui/Footer';
 
 export type SectionId = 'about' | 'programs' | 'gallery' | 'sponsorship' | 'faq' | 'contact' | 'join';
 
-const sectionMap: Record<SectionId, React.ReactNode> = {
-  about: <About />,
-  programs: <Programs />,
-  gallery: <Gallery />,
-  sponsorship: <Sponsorship />,
-  faq: <FAQ />,
-  contact: <Contact />,
-  join: <JoinUs />,
-};
 
 export default function PanelShell() {
   const [activePanel, setActivePanel] = useState<SectionId | null>(null);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -38,6 +30,16 @@ export default function PanelShell() {
   }, []);
 
   const close = () => setActivePanel(null);
+
+  const sectionMap: Record<SectionId, React.ReactNode> = {
+    about: <About />,
+    programs: <Programs />,
+    gallery: <Gallery onLightboxChange={setLightboxOpen} />,
+    sponsorship: <Sponsorship />,
+    faq: <FAQ />,
+    contact: <Contact />,
+    join: <JoinUs />,
+  };
 
   return (
     <div className="relative min-h-screen bg-navy overflow-hidden">
@@ -60,7 +62,7 @@ export default function PanelShell() {
         <div className="absolute inset-0 bg-navy/85" />
       </div>
 
-      <Header onPanelOpen={setActivePanel} activePanel={activePanel} />
+      <Header onPanelOpen={setActivePanel} activePanel={activePanel} lightboxOpen={lightboxOpen} />
 
       {/* Hero content — fades out when a panel is open */}
       <div
