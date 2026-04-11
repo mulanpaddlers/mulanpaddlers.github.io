@@ -3,11 +3,11 @@ import type { ReactNode } from 'react';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'MulanPaddlers',
-  description: "MulanPaddlers — Women's Dragon Boat Team in the Greater Toronto Area",
+  title: 'MulanPaddlers | 木兰桨手',
+  description: "MulanPaddlers — Women's Dragon Boat Team in the Greater Toronto Area | 大多伦多地区女子龙舟队",
   openGraph: {
-    title: 'MulanPaddlers',
-    description: "MulanPaddlers — Women's Dragon Boat Team in the Greater Toronto Area",
+    title: 'MulanPaddlers | 木兰桨手',
+    description: "MulanPaddlers — Women's Dragon Boat Team in the Greater Toronto Area | 大多伦多地区女子龙舟队",
     images: [
       {
         url: 'https://www.mulanpaddlers.com/assets/team-shot1.jpeg',
