@@ -5,6 +5,18 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'MulanPaddlers',
   description: "MulanPaddlers — Women's Dragon Boat Team in the Greater Toronto Area",
+  openGraph: {
+    title: 'MulanPaddlers',
+    description: "MulanPaddlers — Women's Dragon Boat Team in the Greater Toronto Area",
+    images: [
+      {
+        url: 'https://www.mulanpaddlers.com/assets/team-shot1.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'MulanPaddlers team',
+      },
+    ],
+  },
 };
 
 export const viewport: Viewport = {
