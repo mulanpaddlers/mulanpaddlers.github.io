@@ -11,7 +11,7 @@
   },
   "hero": {
     "headline": "Paddle with strength. Grow in community.",
-    "subheadline": "MulanPaddlers is an all-women dragon boat team in the Greater Toronto Area. We train together, compete together, and grow stronger—on and off the water.",
+    "subheadline": "MulanPaddlers is an all-women dragon boat team in the Greater Toronto Area. We train together, compete together, and grow stronger on and off the water.",
     "cta": {
       "primary": "Join the Team",
       "secondary": "Contact Us"
@@ -21,7 +21,7 @@
     "title": "About MulanPaddlers",
     "p1": "MulanPaddlers is an all-women dragon boat team based in the GTA.",
     "p2": "We are committed to creating an inclusive and supportive environment where women of all backgrounds can discover the sport, build confidence, and form meaningful connections.",
-    "p3": "Our team brings together individuals with different levels of experience, united by a shared goal—to improve, compete, and grow together.",
+    "p3": "Our team brings together individuals with different levels of experience, united by a shared goal: to improve, compete, and grow together.",
     "p4": "We value discipline, teamwork, and positive energy, while respecting different learning paces and personal goals."
   },
   "programs": {
@@ -56,7 +56,7 @@
   "gallery": {
     "title": "Gallery",
     "caption": "From training sessions to race days, every moment reflects commitment, teamwork, and growth.",
-    "follow": "View more exciting videos and photos — follow us on"
+    "follow": "View more exciting videos and photos, follow us on"
   },
   "sponsorship": {
     "title": "Partner With Us",
@@ -113,7 +113,7 @@
     "intro": "Whether you're a complete beginner or an experienced paddler, MulanPaddlers welcomes women of all backgrounds. Come try a session, meet the team, and find your place on the water.",
     "tryout": {
       "label": "Request a Tryout",
-      "desc": "Send us an email to book a trial session. No experience needed — just bring your energy and curiosity."
+      "desc": "Send us an email to book a trial session. No experience needed, just bring your energy and curiosity."
     },
     "register": {
       "label": "Register to 2026 Program",

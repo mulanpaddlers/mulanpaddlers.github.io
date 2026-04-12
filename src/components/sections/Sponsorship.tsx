@@ -15,8 +15,7 @@ export default function Sponsorship() {
       <p className="text-white/80 text-sm mb-2">{t('offers.title')}</p>
       <ul className="space-y-1 mb-5">
         {offerItems.map((item, i) => (
-          <li key={i} className="text-white/60 text-sm flex gap-2">
-            <span className="text-pink-hot select-none">—</span>
+          <li key={i} className="text-white/60 text-sm">
             {item}
           </li>
         ))}

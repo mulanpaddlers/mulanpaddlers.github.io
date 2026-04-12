@@ -19,8 +19,7 @@ export default function Programs() {
           </h3>
           <ul className="space-y-1">
             {(t.raw(`${key}.items`) as string[]).map((item, i) => (
-              <li key={i} className="text-white/60 text-sm flex gap-2">
-                <span className="text-pink-hot select-none">—</span>
+              <li key={i} className="text-white/60 text-sm">
                 {item}
               </li>
             ))}
