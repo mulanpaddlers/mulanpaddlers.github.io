@@ -11,23 +11,51 @@ import FAQ from '@/components/sections/FAQ';
 import Contact from '@/components/sections/Contact';
 import JoinUs from '@/components/sections/JoinUs';
 import Team from '@/components/sections/Team';
+import Events from '@/components/sections/Events';
 import ActivePanel from '@/components/shell/ActivePanel';
 import Header from '@/components/ui/Header';
 import Footer from '@/components/ui/Footer';
 
-export type SectionId = 'about' | 'team' | 'programs' | 'gallery' | 'sponsorship' | 'faq' | 'contact' | 'join';
+export type SectionId = 'about' | 'team' | 'programs' | 'events' | 'gallery' | 'sponsorship' | 'faq' | 'contact' | 'join';
 
+const VALID_SECTIONS: SectionId[] = ['about', 'team', 'programs', 'events', 'gallery', 'sponsorship', 'faq', 'contact', 'join'];
 
 export default function PanelShell() {
   const [activePanel, setActivePanel] = useState<SectionId | null>(null);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
+  // On mount, open panel from URL hash
+  useEffect(() => {
+    const hash = window.location.hash.slice(1) as SectionId;
+    if (VALID_SECTIONS.includes(hash)) {
+      setActivePanel(hash);
+    }
+  }, []);
+
+  // Sync hash when panel changes
+  useEffect(() => {
+    if (activePanel) {
+      window.history.replaceState(null, '', `#${activePanel}`);
+    } else {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+  }, [activePanel]);
+
+  // Keyboard + popstate (back/forward)
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setActivePanel(null);
     };
+    const onPop = () => {
+      const hash = window.location.hash.slice(1) as SectionId;
+      setActivePanel(VALID_SECTIONS.includes(hash) ? hash : null);
+    };
     window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
+    window.addEventListener('popstate', onPop);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      window.removeEventListener('popstate', onPop);
+    };
   }, []);
 
   const close = () => setActivePanel(null);
@@ -36,6 +64,7 @@ export default function PanelShell() {
     about: <About />,
     team: <Team />,
     programs: <Programs />,
+    events: <Events />,
     gallery: <Gallery onLightboxChange={setLightboxOpen} />,
     sponsorship: <Sponsorship />,
     faq: <FAQ />,

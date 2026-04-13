@@ -8,10 +8,10 @@ const NAV_SECTIONS: SectionId[] = [
   'about',
   'team',
   'programs',
+  'events',
   'gallery',
   'sponsorship',
   'faq',
-  'contact',
 ];
 
 interface HeroProps {
@@ -23,9 +23,9 @@ export default function Hero({ onPanelOpen }: HeroProps) {
   const tNav = useTranslations('nav');
 
   return (
-    <div className="text-center px-4 sm:px-6 pt-2 pb-6 sm:py-16 md:py-20 w-full max-w-lg sm:max-w-3xl mx-auto">
+    <div className="text-center px-4 sm:px-6 pt-2 pb-6 sm:py-8 md:py-8 w-full max-w-lg sm:max-w-3xl mx-auto">
       {/* Logo — responsive via wrapper + fill */}
-      <div className="relative w-52 h-52 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 mx-auto mb-4 sm:mb-6">
+      <div className="relative w-52 h-52 sm:w-56 sm:h-56 md:w-60 md:h-60 lg:w-[344px] lg:h-[344px] mx-auto mb-3 sm:mb-4">
         <Image
           src="/assets/logo.png"
           alt="MulanPaddlers"
@@ -35,15 +35,15 @@ export default function Hero({ onPanelOpen }: HeroProps) {
         />
       </div>
 
-      <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-2 sm:mb-4">
+      <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white tracking-tight mb-2 sm:mb-3">
         MulanPaddlers
       </h1>
       <p className="text-lg sm:text-lg md:text-xl text-white/80 mb-1">{t('headline')}</p>
-      <p className="text-base sm:text-base text-white/60 mb-6 sm:mb-12 max-w-sm sm:max-w-lg mx-auto leading-snug">
+      <p className="text-base sm:text-base text-white/60 mb-5 sm:mb-6 max-w-sm sm:max-w-lg mx-auto leading-snug">
         {t('subheadline')}
       </p>
 
-      <nav aria-label="Sections" className="mb-6 sm:mb-12">
+      <nav aria-label="Sections" className="mb-5 sm:mb-6">
         <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 sm:gap-x-5 sm:gap-y-0 sm:flex-nowrap">
           {NAV_SECTIONS.map((id) => (
             <button

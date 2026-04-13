@@ -3,6 +3,7 @@
     "about": "About",
     "team": "Team",
     "programs": "Programs",
+    "events": "Events",
     "gallery": "Gallery",
     "sponsorship": "Sponsorship",
     "faq": "FAQ",
@@ -120,6 +121,31 @@
       "desc": "Ready to commit? Fill out the registration form to join our 2026 season lineup."
     },
     "note": "Questions? Reach us at mulanpaddlers@gmail.com or via Instagram @mulanpaddlers."
+  },
+  "events": {
+    "title": "Upcoming Events",
+    "intro": "Stay tuned for our upcoming races, training events, and community activities.",
+    "tabs": {
+      "regattas": "Regattas",
+      "practiceCalendar": "Team Practice Calendar"
+    },
+    "regattas": {
+      "items": [
+        {
+          "date": "Sunday, May 24, 2026",
+          "name": "The Toronto Women's International Dragon Boat Festival",
+          "location": "Heart Lake Conservation Park, Brampton ON",
+          "url": "http://www.truenorthseniorwomen.com/womens-festival.html"
+        }
+      ]
+    },
+    "practiceCalendar": {
+      "placeholder": {
+        "date": "TBD",
+        "name": "Practice schedule coming soon",
+        "details": "Session times and locations will be posted here once confirmed."
+      }
+    }
   },
   "team": {
     "title": "Our Team",
