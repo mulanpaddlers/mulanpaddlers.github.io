@@ -135,7 +135,9 @@
           "date": "Sunday, May 24, 2026",
           "name": "The Toronto Women's International Dragon Boat Festival",
           "location": "Heart Lake Conservation Park, Brampton ON",
-          "url": "http://www.truenorthseniorwomen.com/womens-festival.html"
+          "mapUrl": "https://maps.google.com/?q=Heart+Lake+Conservation+Park,+Brampton,+ON",
+          "url": "http://www.truenorthseniorwomen.com/womens-festival.html",
+          "viewOnMap": "View Map"
         }
       ]
     },

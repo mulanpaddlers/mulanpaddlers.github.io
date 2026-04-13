@@ -50,24 +50,30 @@ export default function Events() {
         </div>
       ) : (
         <div className="space-y-4">
-          {(t.raw('regattas.items') as Array<{ date: string; name: string; location: string; url: string }>).map((item, i) => (
+          {(t.raw('regattas.items') as Array<{ date: string; name: string; location: string; mapUrl: string; url: string; viewOnMap: string }>).map((item, i) => (
             <div key={i} className="border border-white/10 rounded p-4">
               <p className="text-pink-hot text-xs uppercase tracking-widest mb-1">{item.date}</p>
-              <h3 className="text-white font-semibold text-base mb-1 flex items-center gap-1.5">
-                {item.name}
+              <h3 className="text-white font-semibold text-base mb-1">
                 <a
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Open event website"
-                  className="text-white/40 hover:text-pink-hot transition-colors shrink-0"
+                  className="hover:text-pink-hot transition-colors"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
-                  </svg>
+                  {item.name}
                 </a>
               </h3>
-              <p className="text-white/50 text-sm">{item.location}</p>
+              <p className="text-white/50 text-sm">
+                {item.location}{' '}
+                <a
+                  href={item.mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-pink-hot hover:underline"
+                >
+                  {item.viewOnMap}
+                </a>
+              </p>
             </div>
           ))}
         </div>

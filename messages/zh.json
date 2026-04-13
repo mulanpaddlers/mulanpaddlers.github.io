@@ -133,9 +133,11 @@
       "items": [
         {
           "date": "2026年5月24日（周日）",
-          "name": "多伦多国际女子龙舟节",
+          "name": "多伦多女子国际龙舟节",
           "location": "Heart Lake Conservation Park, Brampton ON",
-          "url": "http://www.truenorthseniorwomen.com/womens-festival.html"
+          "mapUrl": "https://maps.google.com/?q=Heart+Lake+Conservation+Park,+Brampton,+ON",
+          "url": "http://www.truenorthseniorwomen.com/womens-festival.html",
+          "viewOnMap": "查看地图"
         }
       ]
     },
