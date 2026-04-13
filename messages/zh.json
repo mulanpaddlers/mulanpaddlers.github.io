@@ -3,7 +3,7 @@
     "about": "关于我们",
     "team": "团队",
     "programs": "训练项目",
-    "events": "近期赛事",
+    "events": "活动",
     "gallery": "图片集",
     "sponsorship": "赞助合作",
     "faq": "常见问题",
@@ -123,7 +123,7 @@
     "note": "有疑问？请发邮件至 mulanpaddlers@gmail.com 或通过 Instagram @mulanpaddlers 联系我们。"
   },
   "events": {
-    "title": "近期赛事",
+    "title": "活动",
     "intro": "敬请关注我们即将到来的比赛、训练活动及社区活动。",
     "tabs": {
       "regattas": "比赛赛程",
