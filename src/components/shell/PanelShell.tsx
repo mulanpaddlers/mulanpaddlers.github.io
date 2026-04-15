@@ -97,7 +97,7 @@ export default function PanelShell() {
 
       {/* Hero content — fades out when a panel is open */}
       <div
-        className={`relative z-10 flex items-center justify-center min-h-screen transition-opacity duration-500 ${
+        className={`relative z-10 flex items-start sm:items-center justify-center min-h-screen pt-[6vh] sm:pt-0 transition-opacity duration-500 ${
           activePanel ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >

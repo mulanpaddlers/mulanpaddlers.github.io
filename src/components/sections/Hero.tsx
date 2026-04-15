@@ -25,7 +25,7 @@ export default function Hero({ onPanelOpen }: HeroProps) {
   return (
     <div className="text-center px-4 sm:px-6 pt-2 pb-6 sm:py-8 md:py-8 w-full max-w-lg sm:max-w-3xl mx-auto">
       {/* Logo — responsive via wrapper + fill */}
-      <div className="relative w-52 h-52 sm:w-56 sm:h-56 md:w-60 md:h-60 lg:w-[344px] lg:h-[344px] mx-auto mb-3 sm:mb-4">
+      <div className="relative w-[250px] h-[250px] sm:w-[270px] sm:h-[270px] md:w-72 md:h-72 lg:w-[344px] lg:h-[344px] mx-auto mb-3 sm:mb-4">
         <Image
           src="/assets/logo.png"
           alt="MulanPaddlers"
@@ -44,12 +44,12 @@ export default function Hero({ onPanelOpen }: HeroProps) {
       </p>
 
       <nav aria-label="Sections" className="mb-5 sm:mb-6">
-        <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 sm:gap-x-5 sm:gap-y-0 sm:flex-nowrap">
+        <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 sm:gap-x-6 sm:gap-y-0 sm:flex-nowrap">
           {NAV_SECTIONS.map((id) => (
             <button
               key={id}
               onClick={() => onPanelOpen(id)}
-              className="text-white/80 hover:text-pink-hot text-xs sm:text-sm uppercase tracking-wide sm:tracking-widest transition-colors border-b border-transparent hover:border-pink-hot pb-0.5 min-h-[36px] sm:min-h-[44px] flex items-center whitespace-nowrap"
+              className="text-white/80 hover:text-pink-hot text-sm uppercase tracking-wide sm:tracking-widest transition-colors border-b border-transparent hover:border-pink-hot pb-0.5 min-h-[44px] flex items-center whitespace-nowrap"
             >
               {tNav(id)}
             </button>
