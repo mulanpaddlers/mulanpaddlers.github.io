@@ -24,7 +24,7 @@ export default function Hero({ onPanelOpen }: HeroProps) {
   const tEvents = useTranslations('events');
 
   return (
-    <div className="text-center px-4 sm:px-6 pt-2 pb-6 sm:py-8 md:py-8 w-full max-w-lg sm:max-w-3xl mx-auto">
+    <div className="text-center px-4 sm:px-6 pt-2 pb-16 sm:py-8 md:py-8 w-full max-w-lg sm:max-w-3xl mx-auto">
       {/* Logo — responsive via wrapper + fill */}
       <div className="relative w-[250px] h-[250px] sm:w-[270px] sm:h-[270px] md:w-72 md:h-72 lg:w-[344px] lg:h-[344px] mx-auto mb-3 sm:mb-4">
         <Image
@@ -45,13 +45,13 @@ export default function Hero({ onPanelOpen }: HeroProps) {
       </p>
 
       {/* Panda Cup CTA */}
-      <div className="mb-5 sm:mb-6 px-4 py-3 border border-pink-hot/20 rounded bg-pink-hot/5 text-center">
-        <p className="text-white/70 text-sm mb-2">{tEvents('pandaCupCta.text')}</p>
+      <div className="mb-5 sm:mb-6 px-5 py-4 border border-pink-hot/60 rounded-lg bg-pink-hot/15 text-center">
+        <p className="text-white text-sm mb-3 leading-relaxed">{tEvents('pandaCupCta.text')}</p>
         <a
           href={tEvents('pandaCupCta.url')}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-xs font-semibold tracking-wide text-pink-hot border border-pink-hot/50 rounded px-3 py-1 hover:bg-pink-hot/10 transition-colors"
+          className="inline-block text-sm tracking-wide text-white bg-pink-hot px-5 py-2 rounded hover:opacity-90 transition-opacity"
         >
           {tEvents('pandaCupCta.label')}
         </a>
