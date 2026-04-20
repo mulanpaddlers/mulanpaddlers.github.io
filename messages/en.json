@@ -125,12 +125,26 @@
   "events": {
     "title": "Upcoming Events",
     "intro": "Stay tuned for our upcoming races, training events, and community activities.",
+    "pandaCupCta": {
+      "text": "Come join us for a great opportunity at the Panda Cup Race — June 20, 2026 in Ottawa! Register now to secure your spot.",
+      "label": "Register for Panda Cup",
+      "url": "https://forms.gle/Darc9rtDVYcCdz5T6"
+    },
     "tabs": {
       "regattas": "Regattas",
       "practiceCalendar": "Team Practice Calendar"
     },
     "regattas": {
       "items": [
+        {
+          "date": "Saturday Morning, June 20, 2026",
+          "name": "PANDA CUP 2026 — TIM HORTONS OTTAWA DRAGON BOAT FESTIVAL",
+          "location": "Mooney's Bay Park, Ottawa, Ontario",
+          "mapUrl": "https://maps.google.com/?q=Mooney's+Bay+Park,+Ottawa,+Ontario",
+          "viewOnMap": "View Map",
+          "registerUrl": "https://forms.gle/Darc9rtDVYcCdz5T6",
+          "registerLabel": "Register Now"
+        },
         {
           "date": "Sunday, May 24, 2026",
           "name": "The Toronto Women's International Dragon Boat Festival",

@@ -50,18 +50,22 @@ export default function Events() {
         </div>
       ) : (
         <div className="space-y-4">
-          {(t.raw('regattas.items') as Array<{ date: string; name: string; location: string; mapUrl: string; url: string; viewOnMap: string }>).map((item, i) => (
+          {(t.raw('regattas.items') as Array<{ date: string; name: string; location: string; mapUrl: string; url?: string; viewOnMap: string; registerUrl?: string; registerLabel?: string }>).map((item, i) => (
             <div key={i} className="border border-white/10 rounded p-4">
               <p className="text-pink-hot text-xs uppercase tracking-widest mb-1">{item.date}</p>
               <h3 className="text-white font-semibold text-base mb-1">
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-pink-hot transition-colors"
-                >
-                  {item.name}
-                </a>
+                {item.url ? (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-pink-hot transition-colors"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  item.name
+                )}
               </h3>
               <p className="text-white/50 text-sm">
                 {item.location}{' '}
@@ -74,6 +78,16 @@ export default function Events() {
                   {item.viewOnMap}
                 </a>
               </p>
+              {item.registerUrl && item.registerLabel && (
+                <a
+                  href={item.registerUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-3 text-xs font-semibold tracking-wide text-pink-hot border border-pink-hot/50 rounded px-3 py-1 hover:bg-pink-hot/10 transition-colors"
+                >
+                  {item.registerLabel}
+                </a>
+              )}
             </div>
           ))}
         </div>

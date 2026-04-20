@@ -73,7 +73,7 @@ export default function PanelShell() {
   };
 
   return (
-    <div className="relative min-h-screen bg-navy overflow-hidden">
+    <div className="relative min-h-screen bg-navy overflow-x-hidden">
       {/* Background: hero image with navy overlay */}
       <div
         aria-hidden="true"

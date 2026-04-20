@@ -21,6 +21,7 @@ interface HeroProps {
 export default function Hero({ onPanelOpen }: HeroProps) {
   const t = useTranslations('hero');
   const tNav = useTranslations('nav');
+  const tEvents = useTranslations('events');
 
   return (
     <div className="text-center px-4 sm:px-6 pt-2 pb-6 sm:py-8 md:py-8 w-full max-w-lg sm:max-w-3xl mx-auto">
@@ -42,6 +43,19 @@ export default function Hero({ onPanelOpen }: HeroProps) {
       <p className="text-base sm:text-base text-white/60 mb-5 sm:mb-6 max-w-sm sm:max-w-lg mx-auto leading-snug">
         {t('subheadline')}
       </p>
+
+      {/* Panda Cup CTA */}
+      <div className="mb-5 sm:mb-6 px-4 py-3 border border-pink-hot/20 rounded bg-pink-hot/5 text-center">
+        <p className="text-white/70 text-sm mb-2">{tEvents('pandaCupCta.text')}</p>
+        <a
+          href={tEvents('pandaCupCta.url')}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-xs font-semibold tracking-wide text-pink-hot border border-pink-hot/50 rounded px-3 py-1 hover:bg-pink-hot/10 transition-colors"
+        >
+          {tEvents('pandaCupCta.label')}
+        </a>
+      </div>
 
       <nav aria-label="Sections" className="mb-5 sm:mb-6">
         <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 sm:gap-x-6 sm:gap-y-0 sm:flex-nowrap">
