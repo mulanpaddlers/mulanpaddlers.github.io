@@ -73,11 +73,11 @@ export default function PanelShell() {
   };
 
   return (
-    <div className="relative min-h-screen bg-navy overflow-x-hidden">
+    <div className="relative min-h-screen bg-navy">
       {/* Background: hero image with navy overlay */}
       <div
         aria-hidden="true"
-        className={`absolute inset-0 transition-all duration-700 ${
+        className={`fixed inset-0 transition-all duration-700 ${
           activePanel ? 'brightness-50' : 'brightness-100'
         }`}
       >
