@@ -41,6 +41,12 @@ export default function PanelShell() {
     }
   }, [activePanel]);
 
+  // Lock body scroll when panel is open
+  useEffect(() => {
+    document.body.style.overflow = activePanel ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [activePanel]);
+
   // Keyboard + popstate (back/forward)
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {

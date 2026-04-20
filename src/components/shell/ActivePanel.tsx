@@ -21,7 +21,7 @@ export default function ActivePanel({ isOpen, onClose, children }: ActivePanelPr
       aria-modal="true"
       ref={panelRef}
       tabIndex={-1}
-      className={`absolute inset-0 z-30 flex items-center justify-center p-3 sm:p-6 outline-none transition-all duration-500 ${
+      className={`fixed inset-0 z-30 flex items-start sm:items-center justify-center pt-10 sm:pt-0 px-3 sm:px-6 pb-4 sm:pb-6 outline-none transition-all duration-500 ${
         isOpen
           ? 'opacity-100 translate-y-0 pointer-events-auto'
           : 'opacity-0 translate-y-4 pointer-events-none'
@@ -35,7 +35,7 @@ export default function ActivePanel({ isOpen, onClose, children }: ActivePanelPr
         >
           ✕
         </button>
-        <div className="max-h-[92vh] sm:max-h-[80vh] overflow-y-auto rounded bg-navy border border-white/10 shadow-2xl p-4 sm:p-8 pt-6 sm:pt-8">
+        <div className="max-h-[82vh] sm:max-h-[80vh] overflow-y-auto rounded bg-navy border border-white/10 shadow-2xl p-4 sm:p-8 pt-6 sm:pt-8">
           {children}
         </div>
       </div>
