@@ -152,6 +152,22 @@
           "mapUrl": "https://maps.google.com/?q=Heart+Lake+Conservation+Park,+Brampton,+ON",
           "url": "http://www.truenorthseniorwomen.com/womens-festival.html",
           "viewOnMap": "View Map"
+        },
+        {
+          "date": "Saturday, Jul 18, 2026",
+          "name": "GWN Sports Regatta",
+          "url": "https://gwndragonboat.com/festivals/gwn-sport-regatta/",
+          "location": "Marilyn Bell Park, Toronto, ON",
+          "mapUrl": "https://maps.app.goo.gl/QW6dyaYsgWMtKhKF8",
+          "viewOnMap": "View Map"
+        },
+        {
+          "date": "Saturday, Sep 19, 2026",
+          "name": "The Stratford Rotary Dragon Boat Festival",
+          "url": "https://rotarystratford.com/page/stratford-rotary-dragon-boat-festival",
+          "location": "Lake Victoria, Stratford, ON",
+          "mapUrl": "https://share.google/J6EjvxK7YqtzOJ0Tm",
+          "viewOnMap": "View Map"
         }
       ]
     },
