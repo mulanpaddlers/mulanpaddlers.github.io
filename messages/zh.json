@@ -126,8 +126,8 @@
     "title": "活动",
     "intro": "敬请关注我们即将到来的比赛、训练活动及社区活动。",
     "pandaCupCta": {
-      "text": "加入我们，把握参加熊猫杯龙舟赛的绝佳机会——2026年6月20日，渥太华见！立即报名，锁定席位。",
-      "label": "报名熊猫杯",
+      "text": "加入我们，把握参加2026蒂姆·霍顿斯渥太华龙舟节的绝佳机会——6月20日，渥太华见！立即报名，锁定席位。",
+      "label": "立即报名",
       "url": "https://forms.gle/Darc9rtDVYcCdz5T6"
     },
     "tabs": {
@@ -138,7 +138,7 @@
       "items": [
         {
           "date": "2026年6月20日（周六上午）",
-          "name": "蒂姆·霍顿斯2026渥太华龙舟节",
+          "name": "2026蒂姆·霍顿斯渥太华龙舟节",
           "location": "Mooney's Bay Park, Ottawa, Ontario",
           "mapUrl": "https://maps.google.com/?q=Mooney's+Bay+Park,+Ottawa,+Ontario",
           "viewOnMap": "查看地图",
