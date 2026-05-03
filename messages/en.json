@@ -115,12 +115,12 @@
             },
             {
               "name": "Paddles Up",
-              "lines": ["Blade buried, still", "Ready to drive"],
+              "lines": ["Blade just above water (not touching)", "Body forward and loaded", "Still and aligned across the boat"],
               "effect": "Clean, unified start"
             },
             {
               "name": "Hold Boat",
-              "lines": ["Full blade in the water"],
+              "lines": ["Blade fully buried"],
               "effect": "Stop + stabilize instantly"
             },
             {
