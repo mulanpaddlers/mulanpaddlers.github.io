@@ -76,6 +76,10 @@
   },
   "faq": {
     "title": "FAQ",
+    "tabs": {
+      "general": "General",
+      "commandSystem": "On-Water Command System"
+    },
     "items": [
       {
         "q": "Do I need prior dragon boat experience?",
@@ -97,7 +101,116 @@
         "q": "How can I join?",
         "a": "Contact us via email or Instagram for current programs and trial sessions."
       }
-    ]
+    ],
+    "commandSystem": {
+      "subtitle": "On-Water Command System — Standardized Execution",
+      "sections": [
+        {
+          "title": "SECTION 1 — FOUNDATION (SET & CONTROL)",
+          "commands": [
+            {
+              "name": "Sit Up",
+              "lines": ["Neutral spine, chest open", "Core engaged"],
+              "effect": "Efficient power transfer"
+            },
+            {
+              "name": "Paddles Up",
+              "lines": ["Blade buried, still", "Ready to drive"],
+              "effect": "Clean, unified start"
+            },
+            {
+              "name": "Hold Boat",
+              "lines": ["Blades flat in water"],
+              "effect": "Stop + stabilize instantly"
+            },
+            {
+              "name": "Let It Run",
+              "lines": ["No paddling, full stillness"],
+              "effect": "Preserve glide"
+            }
+          ]
+        },
+        {
+          "title": "SECTION 2 — ENGINE (SPEED & DISTANCE)",
+          "commands": [
+            {
+              "name": "Up (2 / 5)",
+              "lines": ["Increase rate only", "Shorter, quicker strokes"],
+              "effect": "Acceleration"
+            },
+            {
+              "name": "Power",
+              "lines": ["Increase force only", "Strong catch + leg drive"],
+              "effect": "More propulsion"
+            },
+            {
+              "name": "Lengthen",
+              "lines": ["Reach further, full stroke"],
+              "effect": "More distance per stroke",
+              "note": "Some coaches may say \"Big Rhythm\" — same meaning."
+            },
+            {
+              "name": "Build",
+              "lines": ["Gradual increase (rate + power)"],
+              "effect": "Controlled acceleration"
+            },
+            {
+              "name": "Keep It There",
+              "lines": ["Hold current rate + power"],
+              "effect": "Lock race pace"
+            }
+          ]
+        },
+        {
+          "title": "SECTION 3 — BOAT CONTROL (STEERING & EFFICIENCY)",
+          "commands": [
+            {
+              "name": "Draw Left / Right",
+              "lines": ["Pull water sideways"],
+              "effect": "Directional correction"
+            },
+            {
+              "name": "Back It Down",
+              "lines": ["Reverse paddle"],
+              "effect": "Stop or reposition"
+            },
+            {
+              "name": "Push Shore",
+              "lines": ["Push off dock cleanly"],
+              "effect": "Safe departure"
+            },
+            {
+              "name": "Feather",
+              "lines": ["Flat blade on recovery", "Low + controlled"],
+              "effect": "Reduce drag, clean timing"
+            },
+            {
+              "name": "Together",
+              "lines": ["Blades out of sync"],
+              "effect": "Match timing to stroke seat immediately"
+            }
+          ]
+        },
+        {
+          "title": "SECTION 4 — RACE PROTOCOL (NON-NEGOTIABLE SEQUENCE)",
+          "sequential": true,
+          "commands": [
+            {
+              "name": "Are You Ready",
+              "lines": ["Eyes forward, body set", "No movement"]
+            },
+            {
+              "name": "Attention",
+              "lines": ["Full compression", "Absolute stillness"]
+            },
+            {
+              "name": "Horn (Start Signal)",
+              "lines": ["Explosive first stroke", "No hesitation"]
+            }
+          ]
+        }
+      ]
+    }
   },
   "contact": {
     "title": "Contact Us",

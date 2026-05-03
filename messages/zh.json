@@ -76,6 +76,10 @@
   },
   "faq": {
     "title": "常见问题",
+    "tabs": {
+      "general": "常规问题",
+      "commandSystem": "水上指令系统"
+    },
     "items": [
       {
         "q": "需要龙舟经验吗？",
@@ -97,7 +101,116 @@
         "q": "如何加入？",
         "a": "通过邮箱或 Instagram 联系我们了解训练与试训机会。"
       }
-    ]
+    ],
+    "commandSystem": {
+      "subtitle": "水上指令系统 — 标准化执行",
+      "sections": [
+        {
+          "title": "第一部分 — 基础（准备与控制）",
+          "commands": [
+            {
+              "name": "Sit Up",
+              "lines": ["脊柱中立，胸腔打开", "核心收紧"],
+              "effect": "高效传递力量"
+            },
+            {
+              "name": "Paddles Up",
+              "lines": ["桨叶完全入水，静止", "准备发力"],
+              "effect": "整齐、统一的起桨"
+            },
+            {
+              "name": "Hold Boat",
+              "lines": ["桨叶平放于水面"],
+              "effect": "立即停船并稳定"
+            },
+            {
+              "name": "Let It Run",
+              "lines": ["停止划桨，完全静止"],
+              "effect": "保持船速滑行"
+            }
+          ]
+        },
+        {
+          "title": "第二部分 — 动力（速度与距离）",
+          "commands": [
+            {
+              "name": "Up (2 / 5)",
+              "lines": ["仅提高频率", "更短、更快的划桨"],
+              "effect": "加速"
+            },
+            {
+              "name": "Power",
+              "lines": ["仅增加力量", "强力抓水 + 腿部发力"],
+              "effect": "更大推进力"
+            },
+            {
+              "name": "Lengthen",
+              "lines": ["更大幅度伸展，完整划桨"],
+              "effect": "每桨更大距离",
+              "note": "部分教练可能使用 \"Big Rhythm\"，含义相同。"
+            },
+            {
+              "name": "Build",
+              "lines": ["逐步提升（频率 + 力量）"],
+              "effect": "有控制地加速"
+            },
+            {
+              "name": "Keep It There",
+              "lines": ["保持当前频率与力量"],
+              "effect": "锁定比赛节奏"
+            }
+          ]
+        },
+        {
+          "title": "第三部分 — 船只控制（转向与效率）",
+          "commands": [
+            {
+              "name": "Draw Left / Right",
+              "lines": ["横向拨水"],
+              "effect": "方向修正"
+            },
+            {
+              "name": "Back It Down",
+              "lines": ["反向划桨"],
+              "effect": "停船或调整位置"
+            },
+            {
+              "name": "Push Shore",
+              "lines": ["干净地推离码头"],
+              "effect": "安全离岸"
+            },
+            {
+              "name": "Feather",
+              "lines": ["回桨时桨叶平置", "低而稳"],
+              "effect": "减少阻力，整齐节奏"
+            },
+            {
+              "name": "Together",
+              "lines": ["桨叶不同步"],
+              "effect": "立即对齐头桨节奏"
+            }
+          ]
+        },
+        {
+          "title": "第四部分 — 起跑流程（不可更改的顺序）",
+          "sequential": true,
+          "commands": [
+            {
+              "name": "Are You Ready",
+              "lines": ["目视前方，身体就位", "保持静止"]
+            },
+            {
+              "name": "Attention",
+              "lines": ["完全压缩", "绝对静止"]
+            },
+            {
+              "name": "Horn (Start Signal)",
+              "lines": ["爆发性第一桨", "毫不迟疑"]
+            }
+          ]
+        }
+      ]
+    }
   },
   "contact": {
     "title": "联系我们",
