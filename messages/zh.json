@@ -120,7 +120,7 @@
             },
             {
               "name": "Hold Boat",
-              "lines": ["桨叶平放于水面"],
+              "lines": ["桨叶完全入水"],
               "effect": "立即停船并稳定"
             },
             {
@@ -166,8 +166,8 @@
           "commands": [
             {
               "name": "Draw Left / Right",
-              "lines": ["横向拨水"],
-              "effect": "方向修正"
+              "lines": ["向自身方向拨水"],
+              "effect": "修正船只方向"
             },
             {
               "name": "Back It Down",
@@ -181,8 +181,8 @@
             },
             {
               "name": "Feather",
-              "lines": ["回桨时桨叶平置", "低而稳"],
-              "effect": "减少阻力，整齐节奏"
+              "lines": ["桨叶平放于水面", "保持船身稳定"],
+              "effect": "用于队员在水上换位时"
             },
             {
               "name": "Together",

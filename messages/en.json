@@ -120,7 +120,7 @@
             },
             {
               "name": "Hold Boat",
-              "lines": ["Blades flat in water"],
+              "lines": ["Full blade in the water"],
               "effect": "Stop + stabilize instantly"
             },
             {
@@ -166,8 +166,8 @@
           "commands": [
             {
               "name": "Draw Left / Right",
-              "lines": ["Pull water sideways"],
-              "effect": "Directional correction"
+              "lines": ["Pull water toward yourself"],
+              "effect": "Correct boat direction"
             },
             {
               "name": "Back It Down",
@@ -181,8 +181,8 @@
             },
             {
               "name": "Feather",
-              "lines": ["Flat blade on recovery", "Low + controlled"],
-              "effect": "Reduce drag, clean timing"
+              "lines": ["Blade flat on the surface of the water", "Keeps the boat sturdy"],
+              "effect": "Used when paddlers shift positions on the water"
             },
             {
               "name": "Together",
