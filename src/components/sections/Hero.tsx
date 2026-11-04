@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl';
 import type { SectionId } from '@/components/shell/PanelShell';
 
 const NAV_SECTIONS: SectionId[] = [
-  'about',
   'team',
   'programs',
   'events',
@@ -21,7 +20,6 @@ interface HeroProps {
 export default function Hero({ onPanelOpen }: HeroProps) {
   const t = useTranslations('hero');
   const tNav = useTranslations('nav');
-  const tEvents = useTranslations('events');
 
   return (
     <div className="text-center px-4 sm:px-6 pt-2 pb-16 sm:py-8 md:py-8 w-full max-w-lg sm:max-w-3xl mx-auto">
@@ -43,19 +41,6 @@ export default function Hero({ onPanelOpen }: HeroProps) {
       <p className="text-base sm:text-base text-white/60 mb-5 sm:mb-6 max-w-sm sm:max-w-lg mx-auto leading-snug">
         {t('subheadline')}
       </p>
-
-      {/* Panda Cup CTA */}
-      <div className="mb-5 sm:mb-6 px-5 py-4 border border-pink-hot/60 rounded-lg bg-pink-hot/15 text-center">
-        <p className="text-white text-sm mb-3 leading-relaxed">{tEvents('pandaCupCta.text')}</p>
-        <a
-          href={tEvents('pandaCupCta.url')}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block text-sm tracking-wide text-white bg-pink-hot px-5 py-2 rounded hover:opacity-90 transition-opacity"
-        >
-          {tEvents('pandaCupCta.label')}
-        </a>
-      </div>
 
       <nav aria-label="Sections" className="mb-5 sm:mb-6">
         <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 sm:gap-x-6 sm:gap-y-0 sm:flex-nowrap">

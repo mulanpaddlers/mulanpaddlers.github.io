@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Hero from '@/components/sections/Hero';
-import About from '@/components/sections/About';
 import Programs from '@/components/sections/Programs';
 import Gallery from '@/components/sections/Gallery';
 import Sponsorship from '@/components/sections/Sponsorship';
@@ -16,9 +15,18 @@ import ActivePanel from '@/components/shell/ActivePanel';
 import Header from '@/components/ui/Header';
 import Footer from '@/components/ui/Footer';
 
-export type SectionId = 'about' | 'team' | 'programs' | 'events' | 'gallery' | 'sponsorship' | 'faq' | 'contact' | 'join';
+export type SectionId = 'team' | 'programs' | 'events' | 'gallery' | 'sponsorship' | 'faq' | 'contact' | 'join';
 
-const VALID_SECTIONS: SectionId[] = ['about', 'team', 'programs', 'events', 'gallery', 'sponsorship', 'faq', 'contact', 'join'];
+const VALID_SECTIONS: SectionId[] = ['team', 'programs', 'events', 'gallery', 'sponsorship', 'faq', 'contact', 'join'];
+
+// About was merged into Team; keep old #about links working
+const LEGACY_SECTIONS: Record<string, SectionId> = { about: 'team' };
+
+function parseHash(): SectionId | null {
+  const raw = window.location.hash.slice(1);
+  const hash = (LEGACY_SECTIONS[raw] ?? raw) as SectionId;
+  return VALID_SECTIONS.includes(hash) ? hash : null;
+}
 
 export default function PanelShell() {
   const [activePanel, setActivePanel] = useState<SectionId | null>(null);
@@ -26,10 +34,8 @@ export default function PanelShell() {
 
   // On mount, open panel from URL hash
   useEffect(() => {
-    const hash = window.location.hash.slice(1) as SectionId;
-    if (VALID_SECTIONS.includes(hash)) {
-      setActivePanel(hash);
-    }
+    const hash = parseHash();
+    if (hash) setActivePanel(hash);
   }, []);
 
   // Sync hash when panel changes
@@ -53,8 +59,7 @@ export default function PanelShell() {
       if (e.key === 'Escape') setActivePanel(null);
     };
     const onPop = () => {
-      const hash = window.location.hash.slice(1) as SectionId;
-      setActivePanel(VALID_SECTIONS.includes(hash) ? hash : null);
+      setActivePanel(parseHash());
     };
     window.addEventListener('keydown', onKey);
     window.addEventListener('popstate', onPop);
@@ -67,9 +72,8 @@ export default function PanelShell() {
   const close = () => setActivePanel(null);
 
   const sectionMap: Record<SectionId, React.ReactNode> = {
-    about: <About />,
     team: <Team />,
-    programs: <Programs />,
+    programs: <Programs onPanelOpen={setActivePanel} />,
     events: <Events />,
     gallery: <Gallery onLightboxChange={setLightboxOpen} />,
     sponsorship: <Sponsorship />,

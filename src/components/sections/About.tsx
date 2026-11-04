@@ -11,7 +11,7 @@ export default function About() {
       {/* Team photo header */}
       <div className="relative w-full aspect-[16/9] rounded overflow-hidden mb-6">
         <Image
-          src="/assets/team-shot1.jpeg"
+          src="/assets/team-shot2.jpg"
           alt="MulanPaddlers team"
           fill
           className="object-cover object-top"
@@ -20,7 +20,6 @@ export default function About() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
       </div>
 
-      <h2 className="text-xl font-bold text-white mb-5">{t('title')}</h2>
       <div className="space-y-4 text-white/60 text-sm leading-relaxed">
         <p>{t('p1')}</p>
         <p>{t('p2')}</p>

@@ -3,6 +3,10 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
+// Google Calendar: "Mulan Paddlers 2026/2027"
+const PRACTICE_CALENDAR_URL =
+  'https://calendar.google.com/calendar/embed?src=049b69d328d4620267aacdd62784fef4b023827af6c02ae2086209fd6699b7af%40group.calendar.google.com&ctz=America%2FToronto';
+
 type Tab = 'regattas' | 'practiceCalendar';
 
 export default function Events() {
@@ -40,7 +44,7 @@ export default function Events() {
       {activeTab === 'practiceCalendar' ? (
         <div className="rounded overflow-hidden border border-white/10">
           <iframe
-            src="https://calendar.google.com/calendar/embed?src=b5f4b313614bcff7b39b72285c81018cc661dd058a0adfa14860da2ccb394981%40group.calendar.google.com&ctz=America%2FToronto"
+            src={PRACTICE_CALENDAR_URL}
             className="w-full"
             height="500"
             frameBorder="0"

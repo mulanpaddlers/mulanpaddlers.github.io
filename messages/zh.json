@@ -1,9 +1,9 @@
 {
   "nav": {
     "about": "关于我们",
-    "team": "团队",
+    "team": "关于我们",
     "programs": "训练项目",
-    "events": "活动",
+    "events": "队伍日历",
     "gallery": "图片集",
     "sponsorship": "赞助合作",
     "faq": "常见问题",
@@ -52,7 +52,8 @@
         "先体验团队再决定加入"
       ]
     },
-    "outro": "我们带着目标训练，也在每一个阶段彼此支持。"
+    "outro": "我们带着目标训练，也在每一个阶段彼此支持。",
+    "cta": "加入我们"
   },
   "gallery": {
     "title": "图片集",
@@ -230,19 +231,18 @@
       "desc": "发送邮件预约体验课。无需任何经验，带上你的热情与好奇心即可。"
     },
     "register": {
-      "label": "报名 2026 训练计划",
-      "desc": "准备好加入了吗？填写报名表，加入我们 2026 赛季的队伍。"
+      "label": "报名 2027 训练计划 - 发展队",
+      "desc": "准备好加入了吗？填写报名表，加入我们 2027 赛季的队伍。"
+    },
+    "registerRace": {
+      "label": "报名 2027 训练计划 - 竞赛队（即将开放）",
+      "desc": "适合有经验、投入度高的桨手，希望以更高标准训练，并参加更多竞争性赛事。"
     },
     "note": "有疑问？请发邮件至 mulanpaddlers@gmail.com 或通过 Instagram @mulanpaddlers 联系我们。"
   },
   "events": {
     "title": "活动",
     "intro": "敬请关注我们即将到来的比赛、训练活动及社区活动。",
-    "pandaCupCta": {
-      "text": "加入我们，把握参加2026蒂姆·霍顿斯渥太华龙舟节的绝佳机会——6月20日，渥太华见！立即报名，锁定席位。",
-      "label": "立即报名",
-      "url": "https://forms.gle/Darc9rtDVYcCdz5T6"
-    },
     "tabs": {
       "regattas": "比赛赛程",
       "practiceCalendar": "队伍训练日历"
@@ -254,9 +254,7 @@
           "name": "2026蒂姆·霍顿斯渥太华龙舟节",
           "location": "Mooney's Bay Park, Ottawa, Ontario",
           "mapUrl": "https://maps.google.com/?q=Mooney's+Bay+Park,+Ottawa,+Ontario",
-          "viewOnMap": "查看地图",
-          "registerUrl": "https://forms.gle/Darc9rtDVYcCdz5T6",
-          "registerLabel": "立即报名"
+          "viewOnMap": "查看地图"
         },
         {
           "date": "2026年5月24日（周日）",
@@ -294,9 +292,15 @@
   },
   "team": {
     "title": "我们的团队",
+    "coachEthan": {
+      "name": "教练 Ethan Lo",
+      "role": "主教练",
+      "bio": "Ethan Lo 拥有 10 年龙舟竞赛经验，无论作为竞技运动员还是教练，都对这项运动充满热情。他曾三度代表加拿大国家队出战（2019、2023、2025 年），积累了宝贵的国际赛事经验。多年的投入让他对划桨技术、比赛策略及团队协作有着深刻的理解。自 2019 年起，他一直是 Pickering Dragon Boat Club（PDBC）的核心成员，在俱乐部世界锦标赛及加拿大全国锦标赛中斩获多枚金牌。",
+      "bio2": "作为教练，Ethan 具有在国际赛场带领运动员的经验，曾执教 PDBC 老年 B 组出战在台湾花莲举行的俱乐部世界锦标赛，收获一金一银。他将自身的竞技经验与技术知识融入教学，注重打牢划桨基本功、提升团队同步性，并最大限度地发挥水上表现。Ethan 致力于营造积极、互助的训练氛围，帮助不同年龄与经验水平的运动员建立自信、精进技术，充分发挥潜能。"
+    },
     "coach": {
       "name": "教练 Steve Wilkes",
-      "role": "主教练",
+      "role": "前任主教练",
       "bio": "Steve Wilkes 自 2007 年起成为 Pickering Dragon Boat Club（PDBC）的核心成员，拥有近二十年的精英赛事与教练经验。他曾五次参加俱乐部世界锦标赛（澳门、香港、意大利、匈牙利及 2024 年意大利），斩获多枚金牌，并八度荣获加拿大全国冠军。他亦是 2015 年加拿大国家男子 A 队的金牌成员。",
       "bio2": "作为教练，Steve 持有 PDBC 二级教练认证及 PDBC 舵手认证，并具备 CPR/AED 培训资质与持牌船舶驾驶员资格。他善于将技术要点拆解为清晰、实用的步骤，帮助运动员快速理解并应用所学。其精准的舵手操控与比赛意识为队伍提供了关键的竞争优势。"
     },

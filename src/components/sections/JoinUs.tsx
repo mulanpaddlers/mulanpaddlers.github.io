@@ -22,9 +22,9 @@ export default function JoinUs() {
           <span className="text-white/50 text-xs leading-relaxed">{t('tryout.desc')}</span>
         </a>
 
-        {/* Register to 2026 Program */}
+        {/* Register to 2027 Program - Development Crew */}
         <a
-          href="https://forms.gle/VhapiqWfRdmjvjyG7"
+          href="https://forms.gle/oThmtktUcm2bzBrZ6"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col gap-1 bg-pink-hot/10 border border-pink-hot/40 rounded p-5 hover:bg-pink-hot/20 transition-colors group"
@@ -34,6 +34,14 @@ export default function JoinUs() {
           </span>
           <span className="text-white/50 text-xs leading-relaxed">{t('register.desc')}</span>
         </a>
+
+        {/* Register to 2027 Program - Race Crew (not open yet, so not a link) */}
+        <div
+          className="flex flex-col gap-1 border border-white/10 rounded p-5 opacity-70 cursor-not-allowed"
+        >
+          <span className="text-white/70 font-semibold text-sm">{t('registerRace.label')}</span>
+          <span className="text-white/50 text-xs leading-relaxed">{t('registerRace.desc')}</span>
+        </div>
       </div>
 
       <p className="text-white/30 text-xs mt-8 leading-relaxed">{t('note')}</p>

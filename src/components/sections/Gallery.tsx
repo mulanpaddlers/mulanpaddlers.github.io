@@ -35,7 +35,17 @@ export default function Gallery({ onLightboxChange }: GalleryProps) {
   return (
     <section>
       <h2 className="text-xl font-bold text-white mb-2">{t('title')}</h2>
-      <p className="text-white/50 text-sm mb-5 leading-relaxed">{t('caption')}</p>
+      <p className="text-white/50 text-sm mb-5 leading-relaxed">
+        {t('caption')} {t('follow')}{' '}
+        <a
+          href="https://instagram.com/mulanpaddlers"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-pink-hot hover:underline"
+        >
+          @mulanpaddlers
+        </a>
+      </p>
 
       <div className="grid grid-cols-2 gap-2 sm:gap-3">
         {IMAGES.map(({ src, alt }) => (
@@ -54,18 +64,6 @@ export default function Gallery({ onLightboxChange }: GalleryProps) {
           </button>
         ))}
       </div>
-
-      <p className="text-white/50 text-sm mt-5">
-        {t('follow')}{' '}
-        <a
-          href="https://instagram.com/mulanpaddlers"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-pink-hot hover:underline"
-        >
-          @mulanpaddlers
-        </a>
-      </p>
 
       {/* Lightbox */}
       {selected && (

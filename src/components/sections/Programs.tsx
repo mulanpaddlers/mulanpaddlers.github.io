@@ -1,10 +1,15 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import type { SectionId } from '@/components/shell/PanelShell';
 
 const SUB_SECTIONS = ['indoor', 'onwater', 'trial'] as const;
 
-export default function Programs() {
+interface ProgramsProps {
+  onPanelOpen: (id: SectionId) => void;
+}
+
+export default function Programs({ onPanelOpen }: ProgramsProps) {
   const t = useTranslations('programs');
 
   return (
@@ -28,6 +33,14 @@ export default function Programs() {
       ))}
 
       <p className="text-white/40 text-sm italic mt-4">{t('outro')}</p>
+
+      <button
+        type="button"
+        onClick={() => onPanelOpen('join')}
+        className="mt-6 bg-pink-hot text-white px-7 py-3 text-sm uppercase tracking-widest hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white w-full sm:w-auto"
+      >
+        {t('cta')}
+      </button>
     </section>
   );
 }

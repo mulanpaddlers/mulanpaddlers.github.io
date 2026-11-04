@@ -1,9 +1,9 @@
 {
   "nav": {
     "about": "About",
-    "team": "Team",
+    "team": "About Us",
     "programs": "Programs",
-    "events": "Events",
+    "events": "Team Calendar",
     "gallery": "Gallery",
     "sponsorship": "Sponsorship",
     "faq": "FAQ",
@@ -52,7 +52,8 @@
         "Experience the team before committing"
       ]
     },
-    "outro": "We train with purpose and support each other at every stage."
+    "outro": "We train with purpose and support each other at every stage.",
+    "cta": "Join the Team"
   },
   "gallery": {
     "title": "Gallery",
@@ -230,19 +231,18 @@
       "desc": "Send us an email to book a trial session. No experience needed, just bring your energy and curiosity."
     },
     "register": {
-      "label": "Register to 2026 Program",
-      "desc": "Ready to commit? Fill out the registration form to join our 2026 season lineup."
+      "label": "Register to 2027 Program - Development Crew",
+      "desc": "Ready to commit? Fill out the registration form to join our 2027 season lineup."
+    },
+    "registerRace": {
+      "label": "Register to 2027 Program - Race Crew (Coming Soon)",
+      "desc": "For experienced and committed paddlers who want to train with stronger expectations and participate in more competitive regattas."
     },
     "note": "Questions? Reach us at mulanpaddlers@gmail.com or via Instagram @mulanpaddlers."
   },
   "events": {
     "title": "Upcoming Events",
     "intro": "Stay tuned for our upcoming races, training events, and community activities.",
-    "pandaCupCta": {
-      "text": "Come join us for a great opportunity at the 2026 Tim Hortons Ottawa Dragon Boat Festival on June 20! Register now to secure your spot.",
-      "label": "Register Now",
-      "url": "https://forms.gle/Darc9rtDVYcCdz5T6"
-    },
     "tabs": {
       "regattas": "Regattas",
       "practiceCalendar": "Team Practice Calendar"
@@ -254,9 +254,7 @@
           "name": "2026 TIM HORTONS OTTAWA DRAGON BOAT FESTIVAL",
           "location": "Mooney's Bay Park, Ottawa, Ontario",
           "mapUrl": "https://maps.google.com/?q=Mooney's+Bay+Park,+Ottawa,+Ontario",
-          "viewOnMap": "View Map",
-          "registerUrl": "https://forms.gle/Darc9rtDVYcCdz5T6",
-          "registerLabel": "Register Now"
+          "viewOnMap": "View Map"
         },
         {
           "date": "Sunday, May 24, 2026",
@@ -294,9 +292,15 @@
   },
   "team": {
     "title": "Our Team",
+    "coachEthan": {
+      "name": "Coach Ethan Lo",
+      "role": "Head Coach",
+      "bio": "With 10 years of experience in dragon boat racing, Ethan Lo has developed a strong passion for the sport, both as a competitive athlete and a coach. He has represented Team Canada on three separate occasions (2019, 2023, 2025), gaining valuable experience competing at the international level. His dedication to the sport has allowed him to develop a strong understanding of paddling technique, race strategy, and team dynamics. He has been a dedicated member of Pickering Dragon Boat Club since 2019, earning multiple gold medals at both Club Crew World Championships and Canadian National Championships.",
+      "bio2": "As a coach, Ethan has experience leading athletes on the international stage, having coached PDBC Senior B at the Club Crew World Championships in Hualien, Taiwan where they brought home a Gold and a Silver. He brings his competitive experience and technical knowledge into his coaching, focusing on developing strong paddling fundamentals, improving team synchronization, and maximizing performance on the water. Ethan is passionate about creating a positive and supportive training environment, helping athletes of all ages and experience levels build confidence, refine their technique, and reach their full potential."
+    },
     "coach": {
       "name": "Coach Steve Wilkes",
-      "role": "Head Coach",
+      "role": "Former Head Coach",
       "bio": "Steve Wilkes has been a dedicated member of Pickering Dragon Boat Club (PDBC) since 2007, bringing nearly two decades of elite racing and coaching experience. He has competed at five Club Crew World Championships (Macau, Hong Kong, Italy, Hungary, and Italy 2024), earning multiple gold medals, and is an 8-time Canadian National Champion. He was also part of the gold-medal-winning 2015 Canadian National Senior A Team.",
       "bio2": "As a coach, Steve is a certified PDBC Level 2 Coach and PDBC Steering Certified, with CPR/AED training and a licensed boat operator certification. He is known for his ability to break down technique into clear, practical steps, helping athletes quickly understand and apply what they learn. His precise steering and race awareness add a critical competitive edge on the water."
     },
