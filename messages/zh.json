@@ -250,14 +250,7 @@
     "regattas": {
       "items": [
         {
-          "date": "2026年6月20日（周六上午）",
-          "name": "2026蒂姆·霍顿斯渥太华龙舟节",
-          "location": "Mooney's Bay Park, Ottawa, Ontario",
-          "mapUrl": "https://maps.google.com/?q=Mooney's+Bay+Park,+Ottawa,+Ontario",
-          "viewOnMap": "查看地图"
-        },
-        {
-          "date": "2026年5月24日（周日）",
+          "date": "2027年5月23日（周日，待确认）",
           "name": "多伦多女子国际龙舟节",
           "location": "Heart Lake Conservation Park, Brampton ON",
           "mapUrl": "https://maps.google.com/?q=Heart+Lake+Conservation+Park,+Brampton,+ON",
@@ -265,19 +258,24 @@
           "viewOnMap": "查看地图"
         },
         {
-          "date": "2026年7月18日（周六）",
-          "name": "GWN Sports Regatta",
-          "url": "https://gwndragonboat.com/festivals/gwn-sport-regatta/",
-          "location": "Marilyn Bell Park, Toronto, ON",
-          "mapUrl": "https://maps.app.goo.gl/QW6dyaYsgWMtKhKF8",
+          "date": "2027年6月12日（周六，待确认）",
+          "name": "波特佩里龙舟节（待定）",
+          "location": "Palmer Park, 175 Water Street, Port Perry, ON",
+          "mapUrl": "https://maps.google.com/?q=Palmer+Park%2C+175+Water+Street%2C+Port+Perry%2C+ON",
           "viewOnMap": "查看地图"
         },
         {
-          "date": "2026年9月19日（周六）",
-          "name": "斯特拉特福扶轮社龙舟节",
-          "url": "https://rotarystratford.com/page/stratford-rotary-dragon-boat-festival",
-          "location": "Lake Victoria, Stratford, ON",
-          "mapUrl": "https://share.google/J6EjvxK7YqtzOJ0Tm",
+          "date": "2027年6月19–20日（周六至周日）",
+          "name": "2027蒂姆·霍顿斯渥太华龙舟节",
+          "location": "Mooney's Bay Park, Ottawa, Ontario",
+          "mapUrl": "https://maps.google.com/?q=Mooney's+Bay+Park,+Ottawa,+Ontario",
+          "viewOnMap": "查看地图"
+        },
+        {
+          "date": "2027年9月18日（周六，待确认）",
+          "name": "克里斯蒂湖龙舟节",
+          "location": "Bayfront Park, 200 Harbour Front Drive, Hamilton, Ontario, L8L 1C8",
+          "mapUrl": "https://maps.google.com/?q=Bayfront+Park%2C+200+Harbour+Front+Drive%2C+Hamilton%2C+Ontario%2C+L8L+1C8",
           "viewOnMap": "查看地图"
         }
       ]
