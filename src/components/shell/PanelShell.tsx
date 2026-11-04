@@ -22,24 +22,48 @@ const VALID_SECTIONS: SectionId[] = ['team', 'programs', 'events', 'gallery', 's
 // About was merged into Team; keep old #about links working
 const LEGACY_SECTIONS: Record<string, SectionId> = { about: 'team' };
 
-function parseHash(): SectionId | null {
+// Shareable links to a spot inside a panel: #<element id> -> panel that contains it
+const DEEP_LINKS: Record<string, SectionId> = { 'coach-ethan': 'team' };
+
+type HashTarget = { panel: SectionId; anchor?: string };
+
+function parseHash(): HashTarget | null {
   const raw = window.location.hash.slice(1);
+  if (DEEP_LINKS[raw]) return { panel: DEEP_LINKS[raw], anchor: raw };
   const hash = (LEGACY_SECTIONS[raw] ?? raw) as SectionId;
-  return VALID_SECTIONS.includes(hash) ? hash : null;
+  return VALID_SECTIONS.includes(hash) ? { panel: hash } : null;
 }
 
 export default function PanelShell() {
   const [activePanel, setActivePanel] = useState<SectionId | null>(null);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [pendingAnchor, setPendingAnchor] = useState<string | null>(null);
 
-  // On mount, open panel from URL hash
+  const openFromHash = () => {
+    const target = parseHash();
+    setActivePanel(target?.panel ?? null);
+    setPendingAnchor(target?.anchor ?? null);
+  };
+
+  // On mount, open panel (and deep-link target) from URL hash
   useEffect(() => {
-    const hash = parseHash();
-    if (hash) setActivePanel(hash);
+    if (parseHash()) openFromHash();
   }, []);
 
-  // Sync hash when panel changes
+  // Scroll a deep-linked element into view once its panel has rendered
   useEffect(() => {
+    if (!pendingAnchor || !activePanel) return;
+    const id = requestAnimationFrame(() => {
+      document.getElementById(pendingAnchor)?.scrollIntoView({ block: 'start' });
+      setPendingAnchor(null);
+    });
+    return () => cancelAnimationFrame(id);
+  }, [pendingAnchor, activePanel]);
+
+  // Sync hash when panel changes (keep a deep link while its panel is open)
+  useEffect(() => {
+    const current = parseHash();
+    if (activePanel && current?.anchor && current.panel === activePanel) return;
     if (activePanel) {
       window.history.replaceState(null, '', `#${activePanel}`);
     } else {
@@ -58,9 +82,7 @@ export default function PanelShell() {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setActivePanel(null);
     };
-    const onPop = () => {
-      setActivePanel(parseHash());
-    };
+    const onPop = () => openFromHash();
     window.addEventListener('keydown', onKey);
     window.addEventListener('popstate', onPop);
     return () => {

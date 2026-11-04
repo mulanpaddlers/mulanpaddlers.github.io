@@ -5,8 +5,9 @@ import { useTranslations } from 'next-intl';
 import About from '@/components/sections/About';
 
 // photo: null shows an initials placeholder until a real photo is added
-const MEMBERS: ReadonlyArray<{ key: string; photo: string | null; hasBio2: boolean }> = [
-  { key: 'coachEthan', photo: '/assets/coach-ethan.jpg', hasBio2: true },
+// anchor: element id for a shareable link (must also be listed in DEEP_LINKS in PanelShell)
+const MEMBERS: ReadonlyArray<{ key: string; photo: string | null; hasBio2: boolean; anchor?: string }> = [
+  { key: 'coachEthan', photo: '/assets/coach-ethan.jpg', hasBio2: true, anchor: 'coach-ethan' },
   { key: 'captain', photo: '/assets/captain-jackie.jpeg', hasBio2: false },
   { key: 'coach', photo: '/assets/coach-steve.png', hasBio2: true },
 ];
@@ -27,8 +28,8 @@ export default function Team() {
 
       <section>
         <div className="space-y-8">
-          {MEMBERS.map(({ key, photo, hasBio2 }) => (
-            <div key={key} className="flex flex-col sm:flex-row gap-5">
+          {MEMBERS.map(({ key, photo, hasBio2, anchor }) => (
+            <div key={key} id={anchor} className="flex flex-col sm:flex-row gap-5 scroll-mt-4">
               <div className="relative w-full h-80 sm:w-32 sm:h-32 flex-shrink-0 rounded overflow-hidden bg-white/5">
                 {photo ? (
                   <Image
