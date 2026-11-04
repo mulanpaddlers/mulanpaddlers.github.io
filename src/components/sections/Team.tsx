@@ -29,7 +29,7 @@ export default function Team() {
         <div className="space-y-8">
           {MEMBERS.map(({ key, photo, hasBio2 }) => (
             <div key={key} className="flex flex-col sm:flex-row gap-5">
-              <div className="relative w-full sm:w-32 sm:h-32 h-48 flex-shrink-0 rounded overflow-hidden bg-white/5">
+              <div className="relative w-full h-80 sm:w-32 sm:h-32 flex-shrink-0 rounded overflow-hidden bg-white/5">
                 {photo ? (
                   <Image
                     src={photo}
