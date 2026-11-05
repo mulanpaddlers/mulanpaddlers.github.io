@@ -20,9 +20,6 @@ export default function Events() {
 
   return (
     <section>
-      <h2 className="text-xl font-bold text-white mb-2">{t('title')}</h2>
-      <p className="text-white/50 text-sm mb-6 leading-relaxed">{t('intro')}</p>
-
       {/* Tab bar */}
       <div className="flex gap-6 border-b border-white/10 mb-6">
         {tabs.map((tab) => (
